@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <title>CodeSnip</title>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+    <link rel="icon" href="assets/img/favicon.png">
+
+    <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/fontawesome/all.min.css" rel="stylesheet">
+    <link href="vendor/highlight/default.css" rel="stylesheet">
+    <link href="assets/css/main.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+<!-- Loading div and gif -->
+<div id="loading_div"></div>
+<div id="loading_gif"></div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand text-center" href="index.html">
+        CodeSnip
+    </a>
+</nav>
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col">
+            <div id="snippet" class="card d-none">
+                <div class="card-header">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <h3 id="title" class="mb-0">Title</h3>
+                            <h5 id="lang" class="text-muted">Java</h5>
+                        </div>
+                        <div>
+                            <a href="#" id="creator" class="btn btn-lg btn-link p-0"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <pre><code class="hljs" id="code"></code></pre>
+                </div>
+            </div>
+            <div id="error" class="text-center d-none">
+                <h1>Не съществува такава страница.</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer mt-auto py-3 text-center fixed-bottom">
+    <div class="container">
+        <span class="text-muted">CodeSnip</span>
+    </div>
+</footer>
+
+<script src="vendor/jquery/jquery.min.js" type="text/javascript"></script>
+<script src="vendor/bootstrap/bootstrap.bundle.min.js" type="text/javascript"></script>
+<script src="vendor/fontawesome/all.min.js" type="text/javascript"></script>
+<script src="vendor/highlight/highlight.pack.js" type="text/javascript"></script>
+<script src="vendor/sweetalert2/sweetalert2.all.min.js" type="text/javascript"></script>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/preview.js"></script>
